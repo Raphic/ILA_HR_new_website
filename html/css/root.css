@@ -1,0 +1,94 @@
+*{
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+}
+
+ol, ul {
+    list-style: none;
+}
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+:root {
+    --color-01: #213C88;
+    --color-02: #DA0A34;
+    --color-03: #fff;
+    --color-04: #575756;
+    --color-05: #B0B0B0;
+    --bg-01: #F1F1F1;
+    --bg-02: #6F6F6E;
+    --bg-03: #00A8E6;
+    --bg-04: #0080BE;
+    --bg-05: #005CA0;
+    --bg-06: #213C88;
+    --bg-07: #E7E7E6;
+}
+
+.mgr-auto{
+    margin: auto;
+}
+.w-1200{
+    width: 1200px;
+}
+.list-counter{
+    counter-reset: section;
+}
+
+
+
+
+.flex{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.flex-warp{
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.flex-nowrap{
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+}
+.flex-reverse{
+    -ms-flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse;
+}
+.space-between{
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+.space-around{
+    -ms-flex-pack: distribute;
+    justify-content: space-around
+}
+.align{
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+.align-center{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+.align-start{
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}

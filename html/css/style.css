@@ -1,0 +1,15 @@
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+@import url('href="https://fonts.googleapis.com/css2 family=Kanit:wght@300;400;600&display=swap"');
+@import url('href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"');
+
+
+@charset "utf-8";
+/* CSS Document */
+@import "../css/root.css";
+@import "../css/swiper.min.css";
+@import "../css/header.css";
+@import "../css/main.css";
+@import "../css/footer.css";
+@import "../css/animation.css";
+@import "../css/responsive.css";
+

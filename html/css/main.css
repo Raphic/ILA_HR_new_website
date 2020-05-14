@@ -1,0 +1,200 @@
+/* style for main website */
+.title-section{
+    color: var(--color-01);
+    font-size: 50px;
+    font-weight: 500;
+    margin-bottom: 65px;
+    line-height: 1em;
+}
+.title-child{
+    display: block;
+    color: var(--color-03);
+    background: var(--color-01);
+    padding: 16px 0;
+    margin-bottom: 22px;
+    font-size: 20px;
+}
+
+.wlc-ILA{
+    background: url(../images/banner/banner-01.png) no-repeat left top;
+    height: 785px;
+    padding: 220px 0 150px; 
+}
+.wlc-ILA .title-section{
+    margin-bottom: 35px;
+}
+.wlc-ILA-content{
+    width: 410px;
+    text-align: justify;
+}
+.wlc-ILA-content p{
+    color: var(--color-04);
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.about{
+    padding: 80px 0 120px;
+    text-align: center;
+}
+.about-child{
+    width: 375px;
+    margin-bottom: 58px;
+    position: relative;
+}
+.about-content .about-child:last-child{
+    -webkit-box-flex: 3;
+    -ms-flex-positive: 3;
+    flex-grow: 3;
+    margin-bottom: 0;
+}
+
+.work-ILA{
+    background: url(../images/banner/banner-02.png) no-repeat center center;
+    height: 650px;
+    padding: 115px 0 0;
+}
+.work-ILA .title-section{
+    color: var(--color-03);
+    padding-left: 600px;
+}
+.work-ILA-content{
+    padding-left: 600px;
+}
+.work-ILA-content ol{
+    width: 610px;
+    padding-left: 55px;
+}
+.work-ILA-content li{
+    width: 130px;
+    height: 80px;
+    margin-right: 40px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-03);
+    position: relative;
+}
+.work-ILA-content li:before{
+    counter-increment: section;
+    content: "0" counter(section);
+    font-size: 30px;
+    font-weight: 300;
+    color: var(--color-05);
+    display: block;
+    width: 50px;
+    position: absolute;
+    left: -55px;
+    top: -2px;
+}
+.work-ILA-content li:nth-child(3n){
+    margin-right: 0;
+}
+
+.about-us{
+    text-align: center;
+    padding: 75px 0 65px 0;
+}
+.about-us .title-section{
+    width: 610px;
+    margin: auto;
+}
+.about-us .btn-read-more{
+    margin: 40px auto 0;
+}
+.video-block{
+    width: 782px;
+    height: 445px;
+    margin: 60px auto 75px;
+}
+
+.about-us-child{
+    width: 380px;
+    height: 418px;
+    border : 1px dashed var(--bg-02);
+    text-align: center;
+    position: relative;
+    padding: 0 60px 0;
+}
+.says-avatar{
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    background: var(--bg-06);
+    margin: -72px auto 0;
+}
+.icon-quote{
+    width: 13px;
+    height: 16px;
+    display: block;
+    margin: 40px auto 50px;
+    background: url(../images/icon-quote.png) no-repeat center center;
+}
+.quote{
+    font-size: 14px;
+    line-height: 1.4em;
+    color: var(--color-04);
+    text-align: justify;
+}
+.signature{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--bg-06);
+    margin-top: 60px;
+}
+.postion{
+    font-size: 20px;
+    color: var(--color-04);
+}
+
+ 
+
+.slider-about,
+.slider-faq{
+    width: 100%;
+    position: relative;
+}
+.slider-about .swiper-container{
+    padding-top: 72px;
+} 
+.swiper-slide{
+    z-index: 1;
+}
+.slider-about .swiper-button-next, 
+.slider-about .swiper-button-prev{
+    top: calc(50% + 36px);
+}
+.swiper-button-prev{
+    width: 52px;
+    left: -26px;
+}
+.swiper-button-next{
+    width: 52px;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180);
+    right: -26px;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after{
+    content: '';
+    width: 52px;
+    height: 53px;
+    background: url(../images/icon-arrow-blue.png) no-repeat center center;
+}
+
+
+
+.career-frm{
+    background: var(--bg-07) url(../images/banner/banner-03.png) no-repeat top center;
+    height: 1220px;
+    padding: 140px 0 0;
+}
+.career-frm .title-section{
+    width: 670px;
+    text-align: left;
+}
+
+.faq{
+    text-align: center;
+    padding: 45px 0 0 ;
+}
