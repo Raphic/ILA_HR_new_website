@@ -50,7 +50,30 @@
     background:  url(../images/icon-arrow-red.png) no-repeat center center;
     background-size: contain;
 }
-
+.btn-apply-now{
+    width: 150px;
+    height: 37px;
+    line-height: 37px;
+    color: var(--color-03);
+    background: var(--bg-02);
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 18px;
+}
+.btn-apply-now:hover,
+.btn-apply-now:focus{
+    background: var(--color-02);
+}
+.btn-browseup{
+    width: 190px;
+    height: 32px;
+    background: var(--color-06);
+    line-height: 33px;
+    border-radius: 17px;
+    -webkit-box-shadow: 1px 3px 1px #909090;
+    box-shadow: 1px 3px 1px #909090;
+}
 .top-nav a:hover{
     color: var(--color-02);
 }

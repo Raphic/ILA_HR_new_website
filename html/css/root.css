@@ -29,27 +29,52 @@ a{
     --color-03: #fff;
     --color-04: #575756;
     --color-05: #B0B0B0;
+    --color-06: #E6E6E6;
     --bg-01: #F1F1F1;
     --bg-02: #6F6F6E;
     --bg-03: #00A8E6;
     --bg-04: #0080BE;
     --bg-05: #005CA0;
-    --bg-06: #213C88;
+    --bg-06: #EDF7FD;
     --bg-07: #E7E7E6;
 }
 
 .mgr-auto{
     margin: auto;
 }
+.mgr-0{
+    margin: 0;
+}
+.mgr-b-0{
+    margin-bottom: 0;
+}
+.mgr-l-0{
+    margin-left: 0;
+}
+.mgr-r-0{
+    margin-right: 0;
+}
+.mgr-t-0{
+    margin-top: 0;
+}
 .w-1200{
     width: 1200px;
+}
+.w-100{
+    width: 100%;
+}
+.block{
+    display: block;
+}
+.inline-block{
+    display: inline-block;
 }
 .list-counter{
     counter-reset: section;
 }
-
-
-
+.g-2{
+    width: calc(33.33% * 2);
+}
 
 .flex{
     display: -webkit-box;
@@ -91,4 +116,18 @@ a{
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start
+}
+.align-end{
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+
+.icon-arr-w{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle;
+    background: url(../images/icon-arrow-white.png) no-repeat center center;
+    background-size: contain;
 }
