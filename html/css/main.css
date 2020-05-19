@@ -475,11 +475,122 @@
     text-align: center;
     padding: 45px 0 75px ;
 }
+.faq .img-warp{
+    width: 575px;
+    margin: auto;
+}
+.faq .signature{
+    margin-bottom: 25px;
+}
 .slider-faq{
     margin-top: 25px;
 }
-.slider-faq .signature{
-    margin-bottom: 25px;
+/********************************
+------------ FAQ Page -----------
+*********************************/
+.faq.page{
+    background: var(--bg-01);
+    padding-bottom: 65px;
+}
+.faq.page .img-warp{
+    width: 675px;
+    margin-bottom: 30px;
+}
+.faq.page .faq-content{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.faq.page .about-us-child{
+    text-align: left;
+    height: inherit;
+    padding-bottom: 45px;
+    margin: 0 0 35px 0;
+    background: var(--color-03);
+}
+.faq.page .about-us-child:last-child{
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    margin-left: 30px;
+}
+.faq.page .quote{
+    margin-bottom: 10px;
+}
+/********************************
+------------ Training -----------
+*********************************/
+.training-banner{
+    height: 582px;
+    background: url(../images/banner/banner-training.png) no-repeat center center;
+    background-size: cover; 
+}
+.training-banner h1{
+    font-size: 50px;
+    font-weight: 500;
+    display: inline-block;
+    width: 360px;
+    position: relative;
+    color: var(--color-01);
+    line-height: 1.4em;
+    padding-top: 33px;
+    margin-top: calc(582px/2 - 86px);
+}
+.training-banner h1:before{
+    content: '';
+    width: 45px;
+    height: 4px;
+    background: #DA0A34;
+    position: absolute;
+    top: 0;
+}
+
+.training-content .img-warp{
+    width: 730px;
+}
+.training-content .content{
+    text-align: justify;
+    width: calc(100% - 720px - 95px);
+    margin-top: 220px;
+}
+.training-content .content .title{
+    font-size: 27px;
+    font-weight: bold;
+    color: var(--color-01);
+    margin-bottom: 12px;
+}
+.training-content .content .title:before{
+    content: '';
+    width: 21px;
+    height: 21px;
+    background: #DA0A34;
+    display: inline-block;
+    vertical-align: -1px;
+    margin-right: 20px;
+}
+.training-content .content p{
+    font-size: 13px;
+    color: var(--color-04);
+}
+.training-content .child:nth-child(2){
+    margin-top: -150px;
+}
+.training-content .child:nth-child(2) .content{
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    margin-top: 260px;
+}
+.training-content .child:nth-child(3){
+    margin-top: -100px;
+}
+.training-content .child:nth-child(3) .content{
+    margin-top: 190px;
 }
 /********************************
 ------------- Footer ------------

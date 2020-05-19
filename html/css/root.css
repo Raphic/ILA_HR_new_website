@@ -75,7 +75,9 @@ a{
 .g-2{
     width: calc(33.33% * 2);
 }
-
+.img-warp img{
+    width: 100%;
+}
 .flex{
     display: -webkit-box;
     display: -ms-flexbox;
