@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Life with ILA</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/responsive.css" rel="stylesheet">
+    <!-- Eng Custom CSS -->
+    <script src="js/swiper.min.js"></script>
+</head>
+
+<body>
+    <!-- Header ------------------------->
+    <header>
+        <div class="w-1200 mgr-auto flex space-between flex-nowrap space-between">
+            <figure>
+                <img src="images/logo.png" alt="logo">
+            </figure>
+            <nav>
+                <ul class="top-nav flex space-between flex-nowrap space-between align-center">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Training and development</a></li>
+                    <li><a href="">Life with ILA</a></li>
+                    <li><a href="">Career</a></li>
+                </ul>
+            </nav>
+            <button class="btn btn-contact flex align-center"><img src="images/icon-phone-red.png" alt="contact us">Contact us</button>
+        </div>
+    </header>
+    <!----------------------------------->
+    
+    <!-- main --------------------------->
+    <main>
+        <article>
+            <section class="life-ILA">
+                <div class="career-banner">
+                    <div class="w-1200 mgr-auto">
+                        <h2 class="title-section">So now are you ready to explore your new teaching career?</h2>
+                    </div>
+                </div>
+                <div class="w-1200 mgr-auto">
+                    <div class="career-frm-content">
+                        <div class="tabs-k career-frm-tabs">
+                            <!-- Tab 3 -->
+                            <input type="radio" name="tabset" id="tab1" aria-controls="ila-activity" checked>
+                            <label for="tab1">ILA Activity</label>
+                            <!-- Tab 1 -->
+                            <input type="radio" name="tabset" id="tab2" aria-controls="ila-cn">
+                            <label for="tab2">ILA Community Network</label>
+                            <!-- Tab 2 -->
+                            <input type="radio" name="tabset" id="tab3" aria-controls="what-says-about">
+                            <label for="tab3">What do our employees say about us?</label>
+                            
+                            <div class="tab-panels">
+                                <section id="ila-activity" class="tab-panel">
+                                    bbbbb
+                                </section>
+                                <section id="ila-cn" class="tab-panel">
+                                    aaaaa
+                                </section>
+                                <section id="what-says-about" class="tab-panel">
+                                    cccc
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+    <!----------------------------------->
+    
+    <!-- Footer ------------------------->
+    <footer>
+        <div class="w-1200 mgr-auto">
+            <h3>Contact US:</h3>
+            <div class="footer-content flex flex-warp space-between align-end">
+                <ul class="address">
+                    <li><img src="images/icon-local.png" alt=""><p>12<sup>th</sup> Floor, 146 Nguyen Dinh Chieu Street, District 3, Ho Chi Minh City, Vietnam</p></li>
+                    <li><img src="images/icon-phone.png" alt=""><p>+84 (28) 7302 4466</p></li>
+                    <li><img src="images/icon-mail.png" alt=""><a href="mailto:teacherrecruitment@ilavietnam.edu.vn">teacherrecruitment@ilavietnam.edu.vn</a></li>
+                </ul>
+                <ul class="social-icon flex space-between">
+                    <li><a href="#"><img src="images/icon-fb.png" alt="Facebook"></a></li>
+                    <li><a href="#"><img src="images/icon-youtube.png" alt="Youtube"></a></li>
+                    <li><a href="#"><img src="images/icon-in.png" alt="In"></a></li>
+                    <li><a href="#"><img src="images/icon-tw.png" alt="TW"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!----------------------------------->
+    <script>
+        var swiperabout = new Swiper('.slider-about .swiper-container',{
+            slidesPerView: 3,
+            spaceBetween: 30, 
+            navigation: {
+                nextEl: '.slider-about .swiper-button-next',
+                prevEl: '.slider-about .swiper-button-prev',
+            }
+        });
+        var swiperfaq = new Swiper('.slider-faq .swiper-container',{
+            slidesPerView: 3,
+            spaceBetween: 30, 
+            navigation: {
+                nextEl: '.slider-faq .swiper-button-next',
+                prevEl: '.slider-faq .swiper-button-prev',
+            }
+        });
+    </script>
+</body>
+
+</html>

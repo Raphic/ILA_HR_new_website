@@ -133,3 +133,19 @@ a{
     background: url(../images/icon-arrow-white.png) no-repeat center center;
     background-size: contain;
 }
+
+.list-disc li{
+    position: relative;
+    padding-left: 11px;
+}
+.list-disc li:before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    border-radius: 2px;
+    display: block;
+    background: var(--color-04);
+    position: absolute;
+    left: 0;
+    top: 7px;
+}

@@ -24,7 +24,7 @@
     padding: 220px 0 150px; 
 }
 .wlc-ILA .title-section{
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 .wlc-ILA-content{
     width: 410px;
@@ -32,7 +32,7 @@
 }
 .wlc-ILA-content p{
     color: var(--color-04);
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     font-size: 14px;
 }
 /********************************
@@ -195,6 +195,7 @@
 /********************************
 ---------- Tabs by css ----------
 *********************************/
+
 .tabs-k > input[type="radio"] {
     position: absolute;
     left: -200vw;
@@ -204,17 +205,18 @@
 }
 .tabs-k > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
 .tabs-k > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2),
-.tabs-k > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2) > .tabs-k > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
-.tabs-k > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2) > .tabs-k > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2){
+.tabs-k > input:nth-child(5):checked ~ .tab-panels > .tab-panel:nth-child(3),
+.tabs-k > input:nth-last-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2) > .tabs-k > input:first-child:checked ~ .tab-panels > .tab-panel:first-child,
+.tabs-k > input:nth-last-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2) > .tabs-k > input:nth-child(3):checked ~ .tab-panels > .tab-panel:nth-child(2){
     display: block;
 }
 .tabs-k > label {
     cursor: pointer;
 }
-.tabs-k > label:nth-child(2){
+.tabs-k > label:not(:first-child){
     margin-right: -4px;
-    
 }
+/*
 .tabs-k > label:hover,
 .tabs-k > input:focus + label {
     
@@ -226,7 +228,8 @@
 .tabs-k > input:nth-child(3):checked + label {
 
 }
-.tab-panel {
+*/
+.tab-panel:not(.training-content) {
     padding: 65px 0 30px;
 }
 .tabset,
@@ -237,33 +240,40 @@
 -------- Career section ---------
 *********************************/
 .career-frm{
-    background: var(--bg-07) url(../images/banner/banner-03.png) no-repeat top center;
-    padding: 140px 0 35px;
+    position: relative;
+    background: var(--bg-07);
+}
+
+.career-banner{
+    padding: 135px 0 95px;
+    background: url(../images/banner/banner-03.png) no-repeat top center;
+    position: relative;
     position: relative;
 }
-.career-frm:before{
+.career-banner:before{
     content: '';
     position: absolute;
     width: 100%;
     height: 7px;
     z-index: 3;
-    top: 517px;
+    bottom: 0;
     background: var(--color-02);
 }
 .career-frm .title-section{
-    width: 670px;
+    width: 515px;
     text-align: left;
+    line-height: 1.15em;
 }
 .career-frm-content{
-    margin-top: 158px;
+    margin-top: -73px;
 }
 .career-frm-tabs > label{
-    width: 216px;
+    min-width: 216px;
     text-align: center;
     position: relative;
     z-index: 1;
     display: inline-block;
-    padding: 30px 0 20px 0;
+    padding: 30px 30px 20px;
     background: var(--bg-02);
     border-radius: 30px 30px 0 0 ;
     color: var(--color-03);
@@ -273,20 +283,25 @@
     margin-bottom: -1px;
     background: var(--color-02);
     z-index: 2;
+    -webkit-box-shadow: 10px 4px 10px 0 rgba(0,0,0,0.5), -10px 4px 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 10px 4px 10px 0 rgba(0,0,0,0.5), -10px 4px 10px 0 rgba(0,0,0,0.5);
+}
+.career-frm-tabs > input:first-child:checked + label{
     -webkit-box-shadow: 10px 4px 10px 0 rgba(0,0,0,0.5);
     box-shadow: 10px 4px 10px 0 rgba(0,0,0,0.5);
 }
-.career-frm-tabs > input:nth-child(3):checked + label {
+.career-frm-tabs > input:nth-last-child(3):checked + label {
     -webkit-box-shadow: -10px 4px 10px 0 rgba(0,0,0,0.5);
     box-shadow: -10px 4px 10px 0 rgba(0,0,0,0.5);
 }
 #vacancy{
-    padding: 65px 55px 30px;
+    padding: 65px 55px 75px;
 }
 
 #application-frm{
     position: relative;
     z-index: 1;
+    padding-bottom: 75px;
 }
 #application-frm:before{
     content: '';
@@ -573,10 +588,16 @@
     vertical-align: -1px;
     margin-right: 20px;
 }
-.training-content .content p{
+.training-content .content p,
+.training-content .content ul{
     font-size: 13px;
     color: var(--color-04);
 }
+
+.training-content .content li{
+    margin: 3px auto 3px 4px;
+}
+
 .training-content .child:nth-child(2){
     margin-top: -150px;
 }
