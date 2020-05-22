@@ -77,8 +77,6 @@ a{
 }
 .img-warp img{
     width: 100%;
-    -o-object-fit: cover;
-    object-fit: cover;
 }
 .flex{
     display: -webkit-box;
