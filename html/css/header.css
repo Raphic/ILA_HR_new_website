@@ -14,9 +14,41 @@ header > div{
     width: 640px;
     padding-top: 72px;
 }
+.top-nav li{
+    position: relative;
+}
 .top-nav a{
     color: var(--color-01);
 }
+.top-nav li > ul{
+    display: none;
+    width: 240px;
+    background: var(--color-03);
+    position: absolute;
+    text-align: center;
+    -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+.top-nav li:hover .menu-child{
+    display: block;
+}
+.top-nav .menu-child li a{
+    width: 100%;
+    padding: 20px 45px;
+    display: inline-block;
+    color: var(--color-04);
+}
+.top-nav .menu-child li:not(:last-child):after{
+    content: '';
+    display: block;
+    height: 1px;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(255,255,255,1)), color-stop(15%, rgba(247,247,247,1)), color-stop(50%, rgba(0,0,0,0.2049194677871149)), color-stop(85%, rgba(247,247,247,1)), to(rgba(255,255,255,1)));
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(247,247,247,1) 15%, rgba(0,0,0,0.2049194677871149) 50%, rgba(247,247,247,1) 85%, rgba(255,255,255,1) 100%);
+}
+
 header .btn-contact{
     margin-top: 50px;
 }

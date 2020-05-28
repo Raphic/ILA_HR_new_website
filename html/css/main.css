@@ -214,7 +214,7 @@
     cursor: pointer;
 }
 .tabs-k > label:not(:first-child){
-    margin-right: -4px;
+    margin-right: -5px;
 }
 /*
 .tabs-k > label:hover,
@@ -826,7 +826,7 @@
     background: var(--color-03);
     -webkit-box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.1);
-    min-height: 640px;
+    min-height: 650px;
 }
 .young .child{
     width: calc(25% - 20px);
@@ -835,6 +835,169 @@
     width: calc(33.33% - 20px);
 }
 
+.where-local{
+    padding-bottom: 110px;
+}
+.slider-local .swiper-slide-active .slider-content{
+    display: block;
+    margin-top: 90px;
+}
+.slider-content{
+    display: none;
+    position: absolute;
+    left: calc(-1200px / 2);
+}
+.slider-content > div:first-child{
+    margin-bottom: 35px;
+}
+.content-text{
+    display: block;
+    width: calc(100% - 465px - 45px);
+    text-align: justify;
+}
+.content-text h3{
+    font-size: 30px;
+    color: var(--color-01);
+    margin-bottom: 15px;
+}
+.content-text p{
+    font-size: 14px;
+    line-height: 1.5em;
+    margin-bottom: 15px;
+}
+
+
+.slider-local{
+    margin-top: 90px;
+    text-align: center;
+    position: relative;
+}
+.slider-local h4{
+    font-size: 16px;
+    margin-top: 7px;
+    color: var(--color-01);
+}
+.slider-local .swiper-container{
+    min-height: 960px;
+
+}
+.slider-local .swiper-button-next, 
+.slider-local .swiper-button-prev{
+    top: 90px;
+}
+.slider-local .swiper-button-next:after, 
+.slider-local .swiper-button-prev:after{
+    width: 43px;
+    height: 43px;
+    background-size: contain;
+}
+
+.slider-local .swiper-slide:not(.swiper-slide-active) .img-warp img{
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    cursor: pointer;
+}
+.slider-local .swiper-slide:not(.swiper-slide-active) h4{
+    color: var(--color-04);
+}
+/********************************
+------------- Contact -----------
+*********************************/
+.contact-page{
+    background: url(../images/banner/banner-contact.png) no-repeat top left;
+    background-size: cover;
+}
+.contact-content{
+    padding: 60px 0 100px;
+    color: var(--color-04);
+    background: var(--bg-01);
+}
+.contact-content p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.contact-content .top > div{
+    width: calc(50% - 45px);
+}
+.contact-content .top p{
+    text-align: justify;
+}
+.contact-content .info p{
+    font-size: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    
+}
+.contact-content .info p:not(:last-child){
+    border-bottom: 1px solid var(--color-04);
+    padding-bottom: 20px;
+}
+.contact-content .info p b{
+    color: var(--color-01);
+    display: inline-block;
+}
+.contact-content .info p span{
+    display: inline-block;
+    width: calc(100% - 100px);
+}
+.map{
+    height: 710px;
+    position: relative;
+    margin: 20px auto 75px;
+    z-index: 1;
+}
+.map:before, 
+.map:after{
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 55px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+/*    max-width:300px;*/
+    -webkit-box-shadow: 0 15px 10px #6F6F6F;
+    box-shadow: 0 70px 45px #6F6F6F;
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    background: transparent;
+}
+.map:before{
+   
+}
+.map:after{
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg);
+    right: 10px;
+    left: auto;
+    
+}
+.contact-content .bottom p{
+    margin-bottom: 40px;
+}
+.contact-content .bottom input,
+.contact-content .bottom textarea{
+    background: var(--color-03);
+    padding: 15px;
+    border: 1px solid #9C9C9B;
+    color: var(--color-04);
+    width: 100%;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
+.contact-content .bottom textarea{
+    height: calc(100% - 40px);
+}
+.contact-content .bottom form > div:not(.btn-warp){
+    width: calc(50% - 20px);
+}
+.contact-content form .btn-warp {
+    text-align: center;
+}
 /********************************
 ------------- Footer ------------
 *********************************/
